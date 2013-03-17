@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Prova 1</title>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+  <link rel="stylesheet" href="my.css" />
+  <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+  <script src="my.js"></script>
+
+  <!-- User-generated css -->
+  <style>
+    
+  </style>
+
+  <!-- User-generated js -->
+  <script>
+
+    $(function() {
+        
+    });
+
+  </script>
+</head>
+<body>
+  <!-- Home -->
+  <div data-role="page" id="page1">
+      <div data-theme="a" data-role="header">
+          <h3 id="main_header" class="header">
+              Hoffman Tool
+          </h3>
+      </div>
+      <div data-role="content">
+          <div style="display: inline" id="bengala">
+              <img id="bengala" style="width: 100%; height: px" src="http://assets.codiqa.com/sFLQXNpOSOfhRFgLTe80_bengalatallada.jpg">
+          </div>
+          <div>
+              <p>
+                  <b>
+                      Aquí va un texto de interesante reflexión sobre la vida y la muerte.
+                  </b>
+              </p>
+              <p>
+                  <b>
+                      <br>
+                  </b>
+                  Y aquí sin negrita.
+              </p>
+          </div>
+          <ul data-role="listview" data-divider-theme="a" data-inset="true">
+              <li data-role="list-divider" role="heading">
+                  Elegir aquí
+              </li>
+              <li data-theme="c">
+                  <a href="#page3" data-transition="slide">
+                      Botonet
+                      <span class="ui-li-count">
+                          Aquí va otro texto
+                      </span>
+                  </a>
+              </li>
+              <li data-theme="c">
+                  <a href="#page2" data-transition="slide">
+                      Botonet 2
+                      <span class="ui-li-count">
+                          Atrévete
+                      </span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-role="tabbar" data-iconpos="top" data-theme="a">
+          <ul>
+              <li>
+                  <a href="#page3" data-transition="fade" data-theme="" data-icon="home"
+                  class="ui-btn-active ui-state-persist">
+                      One
+                  </a>
+              </li>
+              <li>
+                  <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                      Two
+                  </a>
+              </li>
+              <li>
+                  <a href="#page1" data-transition="fade" data-theme="" data-icon="info">
+                      Three
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <!-- Formulario guay -->
+  <div data-role="page" id="page2">
+      <div data-theme="a" data-role="header">
+          <h3>
+              Formulario guay
+          </h3>
+      </div>
+      <div data-role="content">
+          <div data-role="fieldcontain">
+              <fieldset data-role="controlgroup">
+                  <label for="textinput1">
+                      Dime cosas
+                  </label>
+                  <input name="" id="textinput1" placeholder="escribe aquí y verás" value=""
+                  type="text">
+              </fieldset>
+          </div>
+          <div id="tu_mismo" data-role="fieldcontain">
+              <fieldset data-role="controlgroup" data-type="vertical">
+                  <legend>
+                      Tú mismo:
+                  </legend>
+                  <input id="radio1" name="eleccion" value="radio1" type="radio">
+                  <label for="radio1">
+                      Opción 1
+                  </label>
+                  <input id="radio2" name="eleccion" value="radio2" type="radio">
+                  <label for="radio2">
+                      Opción 2
+                  </label>
+              </fieldset>
+          </div>
+          <div data-role="fieldcontain">
+              <fieldset data-role="controlgroup">
+                  <label for="toggleswitch1">
+                      Cosa enchufada
+                  </label>
+                  <select name="toggleswitch1" id="toggleswitch1" data-theme="" data-role="slider"
+                  data-mini="true">
+                      <option value="off">
+                          Off
+                      </option>
+                      <option value="on">
+                          On
+                      </option>
+                  </select>
+              </fieldset>
+          </div>
+          <input type="submit" value="Enviar">
+      </div>
+      <div data-role="tabbar" data-iconpos="top" data-theme="a">
+          <ul>
+              <li>
+                  <a href="#page3" data-transition="fade" data-theme="" data-icon="home"
+                  class="ui-btn-active ui-state-persist">
+                      One
+                  </a>
+              </li>
+              <li>
+                  <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                      Two
+                  </a>
+              </li>
+              <li>
+                  <a href="#page1" data-transition="fade" data-theme="" data-icon="info">
+                      Three
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <!-- Texto chachi -->
+  <div data-role="page" id="page3">
+      <div data-role="content">
+          <div class="ui-grid-a">
+              <div class="ui-block-a">
+                  <div data-role="fieldcontain">
+                      <fieldset data-role="controlgroup">
+                          <label for="textinput2">
+                              Campo 1
+                          </label>
+                          <input name="" id="textinput2" placeholder="" value="" type="text">
+                      </fieldset>
+                  </div>
+              </div>
+              <div class="ui-block-b">
+                  <div data-role="fieldcontain">
+                      <fieldset data-role="controlgroup">
+                          <label for="textinput3">
+                              Title
+                          </label>
+                          <input name="" id="textinput3" placeholder="" value="" type="text">
+                      </fieldset>
+                  </div>
+              </div>
+              <div class="ui-block-a">
+                  <div>
+                      <p>
+                          <b>
+                              Texto mío
+                          </b>
+                      </p>
+                  </div>
+              </div>
+              <div class="ui-block-b">
+              </div>
+          </div>
+          <div data-role="collapsible-set">
+              <div data-role="collapsible" data-collapsed="false">
+                  <h3>
+                      Cabecera
+                  </h3>
+              </div>
+              <div data-role="collapsible" data-collapsed="false">
+                  <h3>
+                      Otra cabecera
+                  </h3>
+                  <h2>
+                      Título chulo
+                  </h2>
+                  <div>
+                      <a href="" data-transition="fade">
+                          Link a página principal
+                      </a>
+                  </div>
+                  <div data-role="tabbar" data-iconpos="top" data-theme="a">
+                      <ul>
+                          <li>
+                              <a href="#page3" data-transition="fade" data-theme="" data-icon="home"
+                              class="ui-btn-active ui-state-persist">
+                                  One
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                                  Two
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#page1" data-transition="fade" data-theme="" data-icon="info">
+                                  Three
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  
+</body>
+</html>
